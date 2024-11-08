@@ -10,7 +10,7 @@ export const Resources: CollectionConfig = {
       { name: 'dataset', type: 'relationship', relationTo: 'datasets', required: true },
       // { name: 'project', type: 'relationship', relationTo: 'projects', required: true },
     ]},
-    { name: 'code', type: 'code', admin: { language: 'markdown', condition: data => data.type === 'content' } },
+    { name: 'markdown', type: 'code', admin: { language: 'markdown', condition: data => data.type === 'content' } },
     { name: 'data', type: 'json', required: true },
   ],
 }

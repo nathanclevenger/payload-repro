@@ -85,7 +85,7 @@ export interface Resource {
   id: string;
   type: 'data' | 'content';
   dataset: number | Dataset;
-  code?: string | null;
+  markdown?: string | null;
   data:
     | {
         [k: string]: unknown;
@@ -194,7 +194,7 @@ export interface ResourcesSelect<T extends boolean = true> {
   id?: T;
   type?: T;
   dataset?: T;
-  code?: T;
+  markdown?: T;
   data?: T;
   updatedAt?: T;
   createdAt?: T;
