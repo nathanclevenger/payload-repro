@@ -2,7 +2,8 @@ import type { CollectionConfig } from 'payload'
 
 export const Resources: CollectionConfig = {
   slug: 'resources',
-  admin: { group: 'Data' },
+  admin: { group: 'Data', listSearchableFields: ['id', 'dataset'] },
+  versions: true,
   fields: [
     { name: 'id', type: 'text', required: true },
     { type: 'row', fields: [
